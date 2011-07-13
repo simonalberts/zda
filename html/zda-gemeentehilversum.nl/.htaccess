@@ -1,15 +1,18 @@
 <IfModule mod_rewrite.c>
-RewriteEngine On
- 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
- 
-# Rewrite all other URLs to index.php/URL
-RewriteRule ^(.*)$ index.php/$1 [PT,L]
- 
+	RewriteEngine On
+	RewriteRule ^images/([^/]+)$ images$1 [NC]
+	RewriteRule ^css/([^/]+)$ css$1 [NC]
+	RewriteRule ^([^/]+)/$ /index.php?section=$1 [NC]
+	RewriteRule ^([^/]+)/([^/]+)/([^/]+)$ /index.php?section=$1&action=$2&id=$3 [NC]	
+	RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ /index.php?section=$1&action=$2&id=$3 [NC]	
+	RewriteRule ^([^/]+)/([^/]+)$ /index.php?section=$1&action=$2 [NC]
+	RewriteRule ^([^/]+)/([^/]+)/$ /index.php?section=$1&action=$2 [NC]
+	RewriteRule ^css([^/]+)$ css/$1 [NC]
+	RewriteRule ^images([^/]+)$ images/$1 [NC]
 </IfModule>
-<IfModule !mod_rewrite.c>
-	ErrorDocument 404 /index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
 </IfModule>
 
 <Files ~ ".inc$">
