@@ -1,7 +1,18 @@
 <?php
-include_once('../application/bootstrap.inc.php');
-include_once('../application/header.inc.php');
-include_once('../application/quicklinkbar/view.inc.php');
-include_once('../application/mainbanner/view.inc.php');
-include_once('../application/footer.inc.php');
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
+
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
+
+/** Loads the WordPress Environment and Template */
+require('./wp-blog-header.php');
 ?>
