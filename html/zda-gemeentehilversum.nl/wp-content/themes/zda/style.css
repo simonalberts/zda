@@ -28,7 +28,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	padding: 0;
 	vertical-align: baseline;
 }
-:focus {/* remember to define focus styles! */
+
+:focus 
+{
 	outline: 0;
 }
 body {
@@ -38,7 +40,8 @@ body {
 ol, ul {
 	list-style: none;
 }
-table {/* tables still need 'cellspacing="0"' in the markup */
+table 
+{
 	border-collapse: separate;
 	border-spacing: 0;
 }
@@ -323,3 +326,84 @@ html, body
 	background-position: 100% -100px;
 }
 
+#contentcontainer
+{
+	position: relative;
+	margin: auto;
+	width: 900px;
+}
+
+#contenttopwithsidebar
+{	
+	position: relative;
+	top:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:900px;
+	z-index: 4;
+	height: 10px;
+	font-style: normal;
+	font-family:Verdana, Arial, Sans Serif;
+	background-image: url('images/content/contenttopwithsidebar.gif'); 
+}
+
+#contentwithsidebar
+{	
+	position: relative;
+	top:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:900px;
+	z-index: 4;
+	height: auto;
+	background-image: url('images/content/contentwithsidebar.gif'); 
+}
+
+#contentbottomwithsidebar
+{	
+	position: relative;
+	top:0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:900px;
+	z-index: 4;
+	height: 10px;
+	font-style: normal;
+	font-family:Verdana, Arial, Sans Serif;
+	background-image: url('images/content/contentbottomwithsidebar.gif'); 
+}
+
+#contentleft
+{
+	position: relative;
+	top: 0px;
+	margin-left: 5px;
+	margin-right: 225px;
+	width: 665px;
+	font-family: Arial;
+	color: #031e33;
+	padding: 2px 0px;
+	line-height: 20px;
+	min-height: 400px;
+}
+
+#contentleft strong
+{
+	font-weight: bolder;
+	color: #062c4a;
+}
+
+#sidebar
+{
+	float: right;
+	top: 0px;
+	margin-right: 1px;
+	width: 223px;
+}
+
+#sidebarpanel
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: 1px solid #398ecf;	
+}

@@ -22,7 +22,4 @@
 <body>
 <?php include('mainbannerbar.php'); ?>
 <?php include('menu.php'); ?> 
-<?php include('quicklinksbar.php'); ?> 
-
-</body>
-</html>
+<?php include('contenttop.php'); ?> 
