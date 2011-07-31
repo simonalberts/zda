@@ -11,7 +11,7 @@ Tags:
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -27,6 +27,21 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
+}
+
+h6
+{
+	float: none;
+	border: 0;
+	font-family: inherit;	
+	font-size: 0;
+	font-style: normal;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	visibility: hidden;
+	font-weight: lighter;
 }
 
 :focus 
@@ -199,7 +214,13 @@ html, body
 	height: 30px;
 }
 
-#menu {
+#menu 
+{
+	font-family: Arial;
+	text-decoration: none;
+	font-weight: bolder;
+	font-stretch: condensed;
+	font-variant: normal;
 	position: relative;
 	clear: both;
 	float: left;
@@ -378,13 +399,13 @@ html, body
 	position: relative;
 	top: 0px;
 	margin-left: 5px;
-	margin-right: 225px;
+	margin-right: 5px;
 	width: 665px;
 	font-family: Arial;
 	color: #031e33;
 	padding: 2px 0px;
 	line-height: 20px;
-	min-height: 400px;
+	<!-- min-height: 400px;-->
 }
 
 #contentleft strong
@@ -395,15 +416,64 @@ html, body
 
 #sidebar
 {
-	float: right;
+	position: relative;
 	top: 0px;
+	margin-left: 1px;
 	margin-right: 1px;
 	width: 223px;
 }
 
-#sidebarpanel
+#sidebarseparator
 {
+	position: relative;
+	height: 10px;
+	margin-bottom: 2px;
+	margin-top: 2px;
 	padding-left: 5px;
 	padding-right: 5px;
-	border-bottom: 1px solid #398ecf;	
+}
+
+#sidebarpanel
+{
+	font-family: Arial;
+	position: relative;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	<!--border-bottom: 1px solid #398ecf;-->	
+}
+
+#sabbattijden
+{
+	position: absolute;;
+	top: 0px;
+	font-size: 14px;
+	padding: 5px 5px 3px 5px;
+	color: black;
+}
+
+#sabbattijden strong
+{
+	font-weight: bolder;
+}
+
+#sidebar .bijbelvers
+{
+    color: #550010;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+}
+
+#sidebar .bijbeltekst
+{
+	color: #550010;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
 }

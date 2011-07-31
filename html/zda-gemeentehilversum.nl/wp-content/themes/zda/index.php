@@ -7,7 +7,9 @@
  */
 
 get_header();?>
-<?php get_sidebar(); ?>
+<table>
+<tr>
+<td>
 <div id="contentleft">
 
 <?php 
@@ -20,6 +22,12 @@ while ( have_posts() )
 	
 ?>
 
-</div>
+</div> 
+</td>
+<td>
+<?php get_sidebar(); ?>
+</td>
+</tr>
+</table>
 <?php get_footer();
 ?>
